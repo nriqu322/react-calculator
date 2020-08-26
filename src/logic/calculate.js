@@ -1,5 +1,3 @@
-import Big from './big.mjs';
-
 const calculate = (dataObj, btnName) => {
   let { total, next, operation } = dataObj;
 
