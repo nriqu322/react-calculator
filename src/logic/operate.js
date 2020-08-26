@@ -1,4 +1,4 @@
-import Big from 'big.mjs';
+import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
   let result = 0;
