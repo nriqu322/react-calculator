@@ -22,7 +22,7 @@ const calculate = (dataObj, btnName) => {
     next = null;
     operation = null;
   } else {
-    total = null;
+    total = operate(total, next, operation);
     next = null;
     operation = null;
   }
