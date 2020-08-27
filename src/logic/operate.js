@@ -22,10 +22,14 @@ const operate = (numberOne, numberTwo, operation) => {
   }
 
   if (operation === '÷') {
-    result = valueOne.div(valueTwo);
+    if (valueTwo === '0') {
+      result = 'error';
+    } else {
+      result = valueOne.div(valueTwo);
+    }
   }
 
-  return result;
+  return result.toString();
 };
 
 export default operate;
