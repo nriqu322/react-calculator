@@ -10,6 +10,7 @@ html {
   display: flex;
   flex-direction: column;
   width: 700px;
+  margin: auto;
 }
 
 .display {
