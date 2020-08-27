@@ -19,7 +19,7 @@ class App extends React.Component {
   handleClick(btnName) {
     this.setState(dataObj => {
       const valueObj = calculate(this.state, btnName);
-      // console.log(valueObj);
+      console.log(btnName);
     });
   }
 
