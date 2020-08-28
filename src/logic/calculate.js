@@ -30,6 +30,14 @@ const calculate = (dataObj, btnName) => {
     };
   }
 
+  if (total === 'ERROR') {
+    return {
+      total: null,
+      operation: null,
+      next: null,
+    };
+  }
+
   if (nums.includes(btnName)) {
     return {
       total,
@@ -38,7 +46,7 @@ const calculate = (dataObj, btnName) => {
     };
   }
 
-  if (btnName === '+/-' && !next && total) {
+  if (btnName === '+/-' && !next && total && total !== 'ERROR') {
     return {
       total: (total * -1).toString(),
       next,
@@ -46,7 +54,7 @@ const calculate = (dataObj, btnName) => {
     };
   }
 
-  if (btnName === '+/-' && next) {
+  if (btnName === '+/-' && next && total !== 'ERROR') {
     return {
       total,
       next: (next * -1).toString(),

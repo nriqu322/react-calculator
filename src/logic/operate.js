@@ -22,10 +22,10 @@ const operate = (numberOne, numberTwo, operation) => {
   }
 
   if (operation === '÷') {
-    if (valueTwo === '0') {
-      result = 'error';
-    } else {
+    try {
       result = valueOne.div(valueTwo);
+    } catch (e) {
+      result = 'ERROR';
     }
   }
 
