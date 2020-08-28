@@ -21,7 +21,6 @@ class App extends React.Component {
 
   render() {
     const result = this.state;
-    console.log(this.state);
     return (
       <div className="calculator">
         <Display result={result.next || result.total || result.operation || '0'} />
