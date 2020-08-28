@@ -18,7 +18,7 @@ const operate = (numberOne, numberTwo, operation) => {
   }
 
   if (operation === '%') {
-    result = valueOne.mod(valueTwo);
+    result = valueOne.times(Big(0.01));
   }
 
   if (operation === '÷') {
