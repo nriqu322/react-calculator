@@ -10,7 +10,7 @@ const calculate = (dataObj, btnName) => {
     return {
       total: operate(total, next, operation).toString(),
       operation: btnName,
-      next,
+      next: null,
     };
   }
 
@@ -38,10 +38,19 @@ const calculate = (dataObj, btnName) => {
     };
   }
 
-  if (btnName === '+/-') {
+  if (btnName === '+/-' && !next && total) {
     return {
-      total: total * -1,
-      next: next * -1,
+      total: (total * -1).toString(),
+      next,
+      operation,
+    };
+  }
+
+  if (btnName === '+/-' && next) {
+    return {
+      total,
+      next: (next * -1).toString(),
+      operation,
     };
   }
 

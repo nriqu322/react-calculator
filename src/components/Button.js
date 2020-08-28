@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = props => {
-  // const handleClick = btnName => props.clickHandler(btnName);
   const {
     name, wide, color, handleClick,
   } = props;
@@ -34,7 +33,6 @@ Button.propTypes = {
 Button.defaultProps = {
   color: '#f5913e',
   wide: false,
-  // clickHandler: null,
 };
 
 export default Button;
