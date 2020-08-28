@@ -1,13 +1,18 @@
 # React Calculator
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a requirement of the Microverse curriculum.
+
+Match Magician is a fictional company based in France. They have requested to build a product to assist them with their calculations. The requirements include a fully functional product and also a beautiful design.
 
 ## Live Version
 
 * [See live version here](https://pure-bastion-51395.herokuapp.com/)
 
+![calculator](assets/screenshot.png)
+
 ## Build with
 * JavaScript
 * React
+* [Create React App](https://github.com/facebook/create-react-app)
 * Heroku
 * ESlint and Stylelint as linters
 
